@@ -135,6 +135,7 @@ print("=" * 50)
 try:
     with open("nonexistent.txt", "r") as file:
         content = file.read()
+        print(content)  # This won't execute due to FileNotFoundError
 except FileNotFoundError:
     print("Error: File not found!")
 except PermissionError:

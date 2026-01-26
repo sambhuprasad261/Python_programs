@@ -142,7 +142,7 @@ text = "Python Programming"
 print(f"Original: {text}")
 print(f"First 6 characters: {text[:6]}")
 print(f"Last 11 characters: {text[-11:]}")
-print(f"Characters 7-17: {text[7:18]}")
+print(f"Characters 7-17 (indices 7-17): {text[7:18]}")
 print(f"Every other character: {text[::2]}")
 print(f"Reversed: {text[::-1]}")
 
