@@ -27,7 +27,7 @@ else:
 
 lst2 = [10, 20, 30, 40, 50]
 
-lst[1] = 200
+lst2[1] = 200
 print(lst2)
 
 lst2.append(600)
@@ -39,3 +39,37 @@ print(lst2)
 lst2.pop()
 print(lst2)
 
+lst2.pop(0)
+print(lst2)
+
+n = len(lst)
+s = sum(lst)
+print(s)
+print(s/n)
+
+lst3 = [100, 200, 300, 400, 500]
+temp_lst = [0] * (len(lst3))
+for i in range(len(lst3)):
+    temp_lst[i] += lst3[len(lst3) - i - 1]
+    
+print(temp_lst)
+
+print(temp_lst[::-1])
+
+lst3.reverse()
+
+print(lst3)
+
+
+lst4 = [1, 2, 3, 4, 5, 6, 7]
+
+temp2_lst = [x*x for x in lst4]
+
+print(temp2_lst)
+
+temp3_lst = []
+
+for i in lst4:
+    temp3_lst.append(i * i)
+    
+print(temp3_lst)
